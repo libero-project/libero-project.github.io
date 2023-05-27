@@ -1,0 +1,83 @@
+---
+layout: null
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+
+<div class="video-container">
+    <video autoplay muted id="myVideo">
+        <source src="https://utexas.box.com/shared/static/qgsg40ff167lfdpomiummj06lggi5jt3.mp4" type="video/mp4" onended="skipIntro()">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+
+<div class="button-position">
+    <button id="myBtn" class="button is-rounded custom-button" onclick="skipIntro()">Go to the website</button>
+</div>
+
+<script>
+    function skipIntro() {
+        location.href = 'main.html';  // redirect to the index page
+    }
+    document.cookie = "visited=true; path=/";
+
+</script>
+
+<style>
+    /* Style the video container */
+    .video-container {
+        position: fixed;
+        top: 10px;
+        bottom: -10px;
+        width: 100%;
+        height: 95%;
+        overflow: hidden;
+        z-index: -1;
+    }
+    .button-position {
+        position: fixed;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Style the video */
+    .video-container video {
+        min-width: 90%; 
+        min-height: 90%; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%,-50%);
+    }
+
+    /* Style the button */
+    /* #myBtn {
+        display: block;
+        width: 200px;
+        height: 50px;
+        margin: 20px auto;
+        background-color: #4CAF50; 
+        color: white; 
+        text-align: center; 
+        border-radius: 4px; 
+        padding: 10px; 
+        transition: all 0.5s;
+        cursor: pointer;
+        font-size: 18px;
+    } */
+
+    /* #myBtn:hover {
+        background-color: #45a049;
+    } */
+    .custom-button {
+        background-color: rgba(255, 255, 255, 0.2); /* white with 20% opacity */
+        color: rgb(42, 40, 40); /* vivid white text */
+        border: 2px solid rgb(146, 99, 99); /* white border */
+    }
+
+    .custom-button:hover {
+        background-color: rgba(255, 255, 255, 0.4); /* slightly less transparent when hovered */
+    }
+</style>

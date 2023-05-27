@@ -1,0 +1,22 @@
+people:
+   - name: Bo Liu
+     website: https://cranial-xix.github.io/
+     picture: /assets/img/people/bliu.jpg
+   - name: Yifeng Zhu
+     website: https://cs.utexas.edu/~yifengz
+     picture: /assets/img/people/yifengz.jpg
+   - name: Chongkai Gao
+     website: https://chongkaigao.com/
+     picture: /assets/img/people/chongkaig.png
+   - name: Yihao Feng
+     website: 
+     picture: /assets/img/people/yihaof.jpg
+   - name: Qiang Liu
+     website: https://cs.utexas.edu/~lqiang
+     picture: /assets/img/people/lqiang.jpg
+   - name: Yuke Zhu
+     website: https://cs.utexas.edu/~yukez
+     picture: /assets/img/people/yukez.png
+   - name: Peter Stone
+     website: https://cs.utexas.edu/~pstone
+     picture: /assets/img/people/pstone.png

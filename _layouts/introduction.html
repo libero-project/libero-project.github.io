@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Add CSS styles to make the video cover the entire page */
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
+        #video-background {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+      </style>
+    <!-- Add any additional styles or scripts for the introduction page -->
+</head>
+<body>
+  <video id="video-background" autoplay loop muted>
+    <source src="https://utexas.box.com/shared/static/e6kuzhgezejmpg1nssukm1l09l1ml8p0.mp4" type="video/mp4">
+    <!-- Add fallback content if the video cannot be played -->
+    Your browser does not support the video tag.
+  </video>
+  {{ content }}
+</body>
+</html>
