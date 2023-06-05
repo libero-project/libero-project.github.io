@@ -61,7 +61,7 @@
     <!-- Is a page with a banner -->
     <div class="page-header page-header-small header-filter mb-4">
       {% if page.featured_video %}
-      <video class="page-header-image card-background" autoplay muted playsinline poster="{{ page.featured_image | relative_url }}" src="{{ page.featured_video | relative_url }}"></video>
+      <!-- <video class="page-header-image card-background" autoplay muted playsinline poster="{{ page.featured_image | relative_url }}" src="{{ page.featured_video | relative_url }}"></video> -->
       {% elsif page.featured_image %}
       <div class="page-header-image card-background"
         style="background-image: url({{ page.featured_image | relative_url }});"></div>
@@ -72,24 +72,6 @@
           <div class="col-lg-10 mx-auto text-center pt-4">
             <h2 class="display-2 text-white">{{ page.title }}</h2>
             <h2 class="lead text-white pl-5 pr-5 pb-3 text-center">{{page.subtitle}}</h2>
-            {% if page.show_release_alert %} 
-            <div class="container col-lg-10">
-              <div class="alert alert-default" role="alert">
-                <div class="row align-items-center">
-                  <div class="col-md" style="margin: 0.75rem;">
-                    <span style="font-size: 1rem;"><strong>Exciting news:</strong> the BEHAVIOR-1K beta is now out!</span>
-                  </div>
-                  <div class="col-md-4">
-                    <a class="btn btn-icon btn-success" href="https://behavior.stanford.edu/omnigibson/getting_started/installation.html"
-                      style="background-color: #35c4f3; border-color: #35c4f3;">
-                      <span class="btn-inner--text">Get Started</span><span class="btn-inner--icon"><i
-                          class="ni ni-spaceship"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {% endif %}
           </div>
         </div>
       </div>
