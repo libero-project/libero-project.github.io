@@ -44,7 +44,7 @@ menu_settings:
         url: https://github.com/Lifelong-Robot-Learning/LIBERO
         icon: ni-spaceship text-success
       - title: 'Documentation'
-        url: https://github.com/libero-manipulation
+        url: https://lifelong-robot-learning.github.io/LIBERO/html/getting_started/overview.html
         icon: ni-single-copy-04 text-danger
     - title: 'Datasets'
       url: /datasets
