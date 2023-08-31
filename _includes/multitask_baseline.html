@@ -1,0 +1,89 @@
+
+<div id="libero-90-multitask-plotly-div"  style="width: 80%; margin: 0 auto;"></div>
+
+<script>
+    var x_1 = [0.45,0.1,0.0,0.15,0.2,0.25,0.05,0.3,0.05,0.35,0.2,0.45,0.2,0.1,0.35,0.5,0.25,0.05,0.4,0.15,0.6,0.15,0.75,0.2,0.25,0.8,0.0,0.05,0.05,0.2,0.05,0.5,0.0,0.1,0.2,0.7,0.05,0.05,0.15,0.2,0.45,0.25,0.15,0.1,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.15,0.1,0.35,0.1,0.05,0.0,0.0,0.0,0.2,0.0,0.0,0.35,0.25,0.25,0.0,0.2,0.4,0.0,0.0,0.0,0.05,0.2,0.0,0.15];
+    var x_2 = [0.45,0.1,0.25,0.0,0.0,0.0,0.0,0.45,0.0,0.3,0.7,0.4,0.05,0.35,0.1,0.1,0.05,0.05,0.3,0.0,0.7,0.0,0.4,0.0,0.3,0.6,0.0,0.0,0.8,0.1,0.05,0.25,0.0,0.1,0.05,0.1,0.0,0.05,0.0,0.25,0.15,0.4,0.45,0.1,0.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05,0.0,0.05,0.05,0.3,0.25,0.0,0.25,0.4,0.2,0.0,0.0,0.0,0.0,0.0,0.15,0.05,0.65,0.55,0.2,0.2,0.0,0.05,0.1,0.3,0.3,0.1,0.45,0.2,0.0,0.45,0.05,0.2,0.0,0.2,0.1,0.25,0.1];
+    var x_3 = [0.6,0.0,0.05,0.0,0.0,0.0,0.15,0.25,0.0,0.0,0.15,0.65,0.35,0.0,0.0,0.6,0.25,0.0,0.35,0.4,1.0,0.35,0.55,0.05,0.25,0.85,0.35,0.2,0.9,0.15,0.1,0.2,0.05,0.2,0.1,0.45,0.05,0.15,0.1,0.75,0.05,0.3,0.15,0.15,0.95,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.25,0.1,0.0,0.05,0.05,0.0,0.05,0.05,0.0,0.0,0.0,0.0,0.05,0.0,0.0,0.35,0.0,0.0,0.05,0.0,0.0,0.15,0.05,0.05,0.05,0.05,0.15,0.05,0.05];
+    var y = ['KITCHEN_SCENE10_close_the_top_drawer_of_the_cabinet', 'KITCHEN_SCENE10_close_the_top_drawer_of_the_cabinet_and_put_the_black_bowl_on_top_of_it', 'KITCHEN_SCENE10_put_the_black_bowl_in_the_top_drawer_of_the_cabinet', 'KITCHEN_SCENE10_put_the_butter_at_the_back_in_the_top_drawer_of_the_cabinet_and_close_it', 'KITCHEN_SCENE10_put_the_butter_at_the_front_in_the_top_drawer_of_the_cabinet_and_close_it', 'KITCHEN_SCENE10_put_the_chocolate_pudding_in_the_top_drawer_of_the_cabinet_and_close_it', 'KITCHEN_SCENE1_open_the_bottom_drawer_of_the_cabinet', 'KITCHEN_SCENE1_open_the_top_drawer_of_the_cabinet', 'KITCHEN_SCENE1_open_the_top_drawer_of_the_cabinet_and_put_the_bowl_in_it', 'KITCHEN_SCENE1_put_the_black_bowl_on_the_plate', 'KITCHEN_SCENE1_put_the_black_bowl_on_top_of_the_cabinet', 'KITCHEN_SCENE2_open_the_top_drawer_of_the_cabinet', 'KITCHEN_SCENE2_put_the_black_bowl_at_the_back_on_the_plate', 'KITCHEN_SCENE2_put_the_black_bowl_at_the_front_on_the_plate', 'KITCHEN_SCENE2_put_the_middle_black_bowl_on_the_plate', 'KITCHEN_SCENE2_put_the_middle_black_bowl_on_top_of_the_cabinet', 'KITCHEN_SCENE2_stack_the_black_bowl_at_the_front_on_the_black_bowl_in_the_middle', 'KITCHEN_SCENE2_stack_the_middle_black_bowl_on_the_back_black_bowl', 'KITCHEN_SCENE3_put_the_frying_pan_on_the_stove', 'KITCHEN_SCENE3_put_the_moka_pot_on_the_stove', 'KITCHEN_SCENE3_turn_on_the_stove', 'KITCHEN_SCENE3_turn_on_the_stove_and_put_the_frying_pan_on_it', 'KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet', 'KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet_and_open_the_top_drawer', 'KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet', 'KITCHEN_SCENE4_put_the_black_bowl_on_top_of_the_cabinet', 'KITCHEN_SCENE4_put_the_wine_bottle_in_the_bottom_drawer_of_the_cabinet', 'KITCHEN_SCENE4_put_the_wine_bottle_on_the_wine_rack', 'KITCHEN_SCENE5_close_the_top_drawer_of_the_cabinet', 'KITCHEN_SCENE5_put_the_black_bowl_in_the_top_drawer_of_the_cabinet', 'KITCHEN_SCENE5_put_the_black_bowl_on_the_plate', 'KITCHEN_SCENE5_put_the_black_bowl_on_top_of_the_cabinet', 'KITCHEN_SCENE5_put_the_ketchup_in_the_top_drawer_of_the_cabinet', 'KITCHEN_SCENE6_close_the_microwave', 'KITCHEN_SCENE6_put_the_yellow_and_white_mug_to_the_front_of_the_white_mug', 'KITCHEN_SCENE7_open_the_microwave', 'KITCHEN_SCENE7_put_the_white_bowl_on_the_plate', 'KITCHEN_SCENE7_put_the_white_bowl_to_the_right_of_the_plate', 'KITCHEN_SCENE8_put_the_right_moka_pot_on_the_stove', 'KITCHEN_SCENE8_turn_off_the_stove', 'KITCHEN_SCENE9_put_the_frying_pan_on_the_cabinet_shelf', 'KITCHEN_SCENE9_put_the_frying_pan_on_top_of_the_cabinet', 'KITCHEN_SCENE9_put_the_frying_pan_under_the_cabinet_shelf', 'KITCHEN_SCENE9_put_the_white_bowl_on_top_of_the_cabinet', 'KITCHEN_SCENE9_turn_on_the_stove', 'KITCHEN_SCENE9_turn_on_the_stove_and_put_the_frying_pan_on_it', 'LIVING_ROOM_SCENE1_pick_up_the_alphabet_soup_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE1_pick_up_the_cream_cheese_box_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE1_pick_up_the_ketchup_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE1_pick_up_the_tomato_sauce_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE2_pick_up_the_alphabet_soup_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE2_pick_up_the_butter_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE2_pick_up_the_milk_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE2_pick_up_the_orange_juice_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE2_pick_up_the_tomato_sauce_and_put_it_in_the_basket', 'LIVING_ROOM_SCENE3_pick_up_the_alphabet_soup_and_put_it_in_the_tray', 'LIVING_ROOM_SCENE3_pick_up_the_butter_and_put_it_in_the_tray', 'LIVING_ROOM_SCENE3_pick_up_the_cream_cheese_and_put_it_in_the_tray', 'LIVING_ROOM_SCENE3_pick_up_the_ketchup_and_put_it_in_the_tray', 'LIVING_ROOM_SCENE3_pick_up_the_tomato_sauce_and_put_it_in_the_tray', 'LIVING_ROOM_SCENE4_pick_up_the_black_bowl_on_the_left_and_put_it_in_the_tray', 'LIVING_ROOM_SCENE4_pick_up_the_chocolate_pudding_and_put_it_in_the_tray', 'LIVING_ROOM_SCENE4_pick_up_the_salad_dressing_and_put_it_in_the_tray', 'LIVING_ROOM_SCENE4_stack_the_left_bowl_on_the_right_bowl_and_place_them_in_the_tray', 'LIVING_ROOM_SCENE4_stack_the_right_bowl_on_the_left_bowl_and_place_them_in_the_tray', 'LIVING_ROOM_SCENE5_put_the_red_mug_on_the_left_plate', 'LIVING_ROOM_SCENE5_put_the_red_mug_on_the_right_plate', 'LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate', 'LIVING_ROOM_SCENE5_put_the_yellow_and_white_mug_on_the_right_plate', 'LIVING_ROOM_SCENE6_put_the_chocolate_pudding_to_the_left_of_the_plate', 'LIVING_ROOM_SCENE6_put_the_chocolate_pudding_to_the_right_of_the_plate', 'LIVING_ROOM_SCENE6_put_the_red_mug_on_the_plate', 'LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate', 'STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy', 'STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy', 'STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy', 'STUDY_SCENE1_pick_up_the_yellow_and_white_mug_and_place_it_to_the_right_of_the_caddy', 'STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy', 'STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy', 'STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy', 'STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy', 'STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy', 'STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy', 'STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy', 'STUDY_SCENE3_pick_up_the_red_mug_and_place_it_to_the_right_of_the_caddy', 'STUDY_SCENE3_pick_up_the_white_mug_and_place_it_to_the_right_of_the_caddy', 'STUDY_SCENE4_pick_up_the_book_in_the_middle_and_place_it_on_the_cabinet_shelf', 'STUDY_SCENE4_pick_up_the_book_on_the_left_and_place_it_on_top_of_the_shelf', 'STUDY_SCENE4_pick_up_the_book_on_the_right_and_place_it_on_the_cabinet_shelf', 'STUDY_SCENE4_pick_up_the_book_on_the_right_and_place_it_under_the_cabinet_shelf'];
+
+    // var hover10Text = y_10.map(value => value !== 0 ? `${value / 1000}k` : '');
+    // var hover90Text = y_90.map(value => value !== 0 ? `${value / 1000}k` : '');
+    // var hoverText = y_data.map(value => value !== 0 ? `${value / 1000}k` : '');
+
+    var rnn = {
+        type: 'bar',
+        orientation: "h",
+        x: x_1,
+        y: y,
+        marker: {
+            color: '#E57373' //, '#81C784', '#64B5F6', "#FFD54F"]
+        },
+        showlegend: true,
+        name: "Resnet-RNN",
+    };
+    var resnet_t = {
+        type: 'bar',
+        orientation: "h",
+        x: x_2,
+        y: y,
+        marker: {
+            color: '#81C784' //, '#81C784', '#64B5F6', "#FFD54F"]
+        },
+        showlegend: true,
+        name: "Resnet-T"
+    };
+    var vit_t = {
+        type: 'bar',
+        orientation: "h",
+        x: x_3,
+        y: y,
+        marker: {
+            color: '#64B5F6' //, '#81C784', '#64B5F6', "#FFD54F"]
+        },
+        showlegend: true,
+        name: "ViT-T"
+    };
+    data = [vit_t, resnet_t, rnn]
+    var layout = {
+            width: 1200,
+            height: 2000,
+            title: {
+                text: 'Success Rates of Multitask Baselines in LIBERO-90',
+                font: {
+                    size: 24,
+                    color: '#333'
+                }
+            },
+            paper_bgcolor: 'rgba(0,0,0,0)', // transparent
+            plot_bgcolor: 'rgba(0,0,0,0)',  // transparent
+            xaxis: {
+                domain: [0.3, 1],
+                title: 'Success Rates',
+                gridcolor: '#e1e1e1',
+                tickfont: {
+                    size: 14,
+                    color: '#333'
+                },
+                'showgrid': true,
+            },
+            yaxis: {
+                title: '',
+                gridcolor: '#e1e1e1',
+                tickfont: {
+                    size: 8,
+                    color: '#333'
+                },
+                showline: true,
+                linewidth: 2,
+                linecolor: "#cccc",
+                'showgrid': false
+            },
+            hoverlabel: {
+                angle: 0,
+            },
+        };
+    var config = { displayModeBar: false };
+    // Create the bar plot
+    Plotly.newPlot('libero-90-multitask-plotly-div', data, layout, config);
+</script>

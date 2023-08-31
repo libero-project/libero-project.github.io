@@ -52,3 +52,6 @@ We also have a [script](https://lifelong-robot-learning.github.io/LIBERO/html/al
 <i class="fa fa-download"></i> [LIBERO-Object Best Model Checkpoints]() <br>
 <i class="fa fa-download"></i> [LIBERO-Goal Best Model Checkpoints]() <br>
 <i class="fa fa-download"></i> [LIBERO-100 Best Model Checkpoints]() <br>
+
+
+{% include multitask_baseline.html %}
