@@ -1,0 +1,79 @@
+<div id="total-frame-per-suite-plotly-div"  style="width: 80%; margin: 0 auto;"></div>
+
+<script>
+    var y_90 = [0, 0, 0, 669043];
+    var y_10 = [0, 0, 0, 138090];
+    var y_data = [62250, 74507, 63728, 0];
+
+    var hover10Text = y_10.map(value => value !== 0 ? `${value / 1000}k` : '');
+    var hover90Text = y_90.map(value => value !== 0 ? `${value / 1000}k` : '');
+    var hoverText = y_data.map(value => value !== 0 ? `${value / 1000}k` : '');
+
+    var libero90_bar = {
+        type: 'bar',
+        x: ['LIBERO-Spatial', 'LIBERO-Object', 'LIBERO-Goal', 'LIBERO-100'],
+        y: y_90,
+        marker: {
+            color: '#FF9966'
+        },
+        name: "LIBERO-90",
+        text: hover90Text,
+        hoverinfo: 'text',
+    };
+
+    var libero10_bar = {
+        type: 'bar',
+        x: ['LIBERO-Spatial', 'LIBERO-Object', 'LIBERO-Goal', 'LIBERO-100'],
+        y: [0, 0, 0, 138090],
+        marker: {
+            color: '#FFCC66'
+        },
+        name: "LIBERO-10",
+        text: hover10Text,
+        hoverinfo: 'text',
+    };
+
+    var mainbar = {
+        type: 'bar',
+        x: ['LIBERO-Spatial', 'LIBERO-Object', 'LIBERO-Goal', 'LIBERO-100'],
+        y: [62250, 74507, 63728, 0],
+        marker: {
+            color: ['#E57373', '#81C784', '#64B5F6', "#FFD54F"]
+        },
+        showlegend: false,
+        text: hoverText,
+        hoverinfo: 'text',
+    };
+    data = [libero90_bar, libero10_bar, mainbar]
+    var layout = {
+            barmode: "stack",
+            title: {
+                text: 'Total Number of Frames Per Suite',
+                font: {
+                    size: 24,
+                    color: '#333'
+                }
+            },
+            paper_bgcolor: 'rgba(0,0,0,0)', // transparent
+            plot_bgcolor: 'rgba(0,0,0,0)',  // transparent
+            xaxis: {
+                title: 'Task Suites',
+                gridcolor: '#e1e1e1',
+                tickfont: {
+                    size: 14,
+                    color: '#333'
+                }
+            },
+            yaxis: {
+                title: 'Number of Frames',
+                gridcolor: '#e1e1e1',
+                tickfont: {
+                    size: 14,
+                    color: '#333'
+                }
+            }
+        };
+    var config = { displayModeBar: false };
+    // Create the bar plot
+    Plotly.newPlot('total-frame-per-suite-plotly-div', data, layout, config);
+</script>

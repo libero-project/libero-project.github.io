@@ -42,7 +42,7 @@ $indigo:  #5603ad !default;
 $purple:  #8965e0 !default;
 $pink:    #f3a4b5 !default;
 $red:     #f5365c !default;
-$orange:  #fb6340 !default;
+$orange:  #bf5700 !default;
 $yellow:  #ffd600 !default;
 $green:   #2dce89 !default;
 $teal:    #11cdef !default;
@@ -69,11 +69,11 @@ $colors: map-merge((
 
 // $default:       #172b4d !default;
 $default:       #9d9d9d !default;
-$primary:       #5e72e4 !default;
+$primary:       #bf5700 !default;
 $secondary:     #f4f5f7 !default;
 $success:       $green !default;
 $info:          $teal !default;
-$warning:       #9E9DFF !default;
+$warning:       #ea4c89 !default;
 $danger:        $red !default;
 $light:         $gray-500 !default;
 $dark:          $gray-900 !default;
@@ -354,7 +354,7 @@ $headings-margin-bottom:      ($spacer / 2);
 $headings-font-family:        inherit !default;
 $headings-font-weight:        $font-weight-normal !default;
 $headings-line-height:        1.5 !default;
-$headings-color:              $gray-800 !default;
+$headings-color:              $gray-900 !default;
 
 $heading-letter-spacing:      .025em !default;
 $heading-font-size:           .95rem !default;

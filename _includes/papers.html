@@ -1,0 +1,12 @@
+
+
+<div>
+    {% for item in site.posts %}
+    
+    <span><a href="{{item.url}}"> 
+        {{ item.title }}
+    </a>. {{ item.authors }}. {{ item.venue }}.
+    </span><br>
+    
+    {% endfor %}
+</div>

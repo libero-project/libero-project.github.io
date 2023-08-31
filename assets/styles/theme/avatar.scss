@@ -49,3 +49,31 @@
 
 	}
 }
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.avatar-container {
+    margin: 10px; /* Adjust this value as necessary for spacing between avatars */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.avatar-circle {
+    width: 100px;  /* Set the width as per your need */
+    height: 100px; /* Make sure height and width are the same to maintain circle shape */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image covers the element without stretching */
+}
+
+@media (max-width: 768px) {
+    .avatar-circle {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -9,22 +9,9 @@
   <link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image | relative_url }}">
   <title>{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}</title>
 
-  <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
 
   <meta name="description" content="{{ page.description }}">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title"
-    content="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image:src" content="{{ page.featured_image | absolute_url }}">
-
-  <!-- Facebook OpenGraph -->
-  <meta property="og:title"
-    content="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}" />
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta property="og:image" content="{{ page.featured_image | absolute_url }}" />
 
   <!--  Fonts and icons -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -49,6 +36,8 @@
   {% endif %}
 
   <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 
 </head>
 

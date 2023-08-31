@@ -22,7 +22,6 @@ blog_settings:
     # narrow – a masonary grid of posts
     # grid – a full-width square grid of posts
   theme: narrow
-  # Should we display a narrow grid of other posts at the bottom of each blog post?
   read_more: "yes"
 
 # Setup your navigation below – how to use the icons: 
@@ -32,7 +31,7 @@ blog_settings:
 menu_settings:
   menu_items:
     - title: 'Home'
-      url: /
+      url: /main
 
     - title: 'LIBERO'
       url: /libero
@@ -40,7 +39,7 @@ menu_settings:
       - title: 'Overview'
         url: /libero
         icon: ni-bullet-list-67 text-default
-      - title: 'Getting Started'
+      - title: 'Codebase'
         url: https://github.com/Lifelong-Robot-Learning/LIBERO
         icon: ni-spaceship text-success
       - title: 'Documentation'
