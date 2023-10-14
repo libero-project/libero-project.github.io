@@ -1,6 +1,6 @@
 ---
 title: LIBERO Datasets
-subtitle: For more detailed description, please refer to the <a href="">LIBERO documentation</a>
+# subtitle: For more detailed description, please refer to the <a href="https://lifelong-robot-learning.github.io/LIBERO/html/index.html">LIBERO documentation</a>
 featured_image: /assets/img/libero/whole_img.png
 ---
 

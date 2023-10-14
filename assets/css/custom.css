@@ -13,3 +13,105 @@
     from { opacity: 1; }
     to { opacity: 0; }
 }
+
+
+.svg-container {
+    opacity: 0!important;
+    transition: opacity 1s!important; /* Adjust the duration as needed */
+    height: 100vh!important; /* This ensures each SVG takes the full viewport height */
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+
+.svg-container.active {
+    opacity: 1!important;
+}
+
+
+
+    /* Container to hold the image and text */
+    .container {
+        display: flex !important;
+        height: 100vh !important; /* Full viewport height */
+    }
+
+    /* Image styling */
+    .svg-image-section {
+        flex: 3 !important; /* 3/4 of the container */
+        background-size: cover !important;
+    }
+
+    /* Text styling */
+    .text-section {
+        flex: 1 !important; /* 1/4 of the container */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: #f5f5f5 !important; /* Light gray background for contrast */
+        padding: 20px !important;
+        box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1) !important; /* A subtle shadow for depth */
+    }
+
+    .text-section h1 {
+        font-size: 24px !important;
+        color: #333 !important;
+        text-align: center !important;
+    }
+
+    .responsiveDiv {
+        width: device-width!important; /* This ensures the div takes up the entire width of its parent or screen */
+    }
+
+    .zoomedDiv {
+        transform: scale(1.5)!important; /* This scales the div and its content by a factor of 1.5 */
+    }
+
+    .main-page-section {
+        position: relative!important;
+        height: 100vh!important;
+        display: flex!important;
+        align-items: center!important;
+        padding: 50px!important;
+        background-color: #ffffff!important;
+        opacity: 0!important;
+        transform: translateY(30px)!important;
+        transition: opacity 0.5s, transform 0.5s!important;
+    }
+
+    .main-page-section.visible {
+        opacity: 1!important;
+        transform: translateY(0)!important;
+    }
+
+    .main-page-section .text-content {
+        flex: 1!important;
+        /* height: 100vh; */
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+        padding: 20px!important;
+        background: radial-gradient(circle at bottom left, #e0e0e0, transparent)!important;
+        background-size: 100% 100vh!important; /* This will make sure the gradient covers the full height */
+    }
+    .main-page-section .img-content {
+        flex: 1!important;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+        padding:20px!important;
+    }
+
+
+    .main-page-section h1, h2, p {
+        font-size: 2em!important;
+        color: #333!important;
+    }
+
+    .main-page-section .divider {
+        position: absolute!important;
+        bottom: 0!important;
+        left: 0!important;
+        width: 100%!important;
+        fill: #ffffff!important;
+    }

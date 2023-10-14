@@ -15,9 +15,6 @@ show_release_alert: false
 
 In the future, robots will be pretrained with a diverse set of skills in factory before deployment. However, we believe it is also a must for them to learn with their human users throughout their lifetime to really become a personalized embodied agent. This pertains to the paradigm of lifelong learning in decision making (LLDM). While LLDM is an important research question, currently the community lacks good testbeds for studying LLDM. To this end, we propose LIBERO.
 
-**The full release is coming soon!**
-
-
 {% include pull_video.html %}
 
 {% include main_benchmarks.html %}
