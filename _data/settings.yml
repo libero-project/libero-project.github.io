@@ -36,9 +36,9 @@ menu_settings:
     - title: 'LIBERO'
       url: /libero
       submenu_items:
-      # - title: 'Overview'
-      #   url: /libero
-      #   icon: ni-bullet-list-67 text-default
+      - title: 'Paper'
+        url: https://arxiv.org/abs/2306.03310
+        icon: ni-single-copy-04 text-default
       - title: 'Codebase'
         url: https://github.com/Lifelong-Robot-Learning/LIBERO
         icon: ni-spaceship text-success
