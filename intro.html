@@ -6,9 +6,12 @@ layout: null
 
 <div class="video-container">
     <video autoplay muted playsinline controls id="myVideo">
-        <source src="https://utexas.box.com/shared/static/qgsg40ff167lfdpomiummj06lggi5jt3.mp4" type="video/mp4" onended="skipIntro()">
+        <source src="assets/videos/libero_intro.mp4" type="video/mp4" onended="skipIntro()">
         Your browser does not support HTML5 video.
     </video>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/tL6ALEzpNFQ?si=zcBnKuxaA8GXaVBb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen onended="skipIntro()"></iframe> -->
+</iframe>
+
 </div>
 
 <div class="button-position">
@@ -33,6 +36,10 @@ layout: null
         height: 95%;
         overflow: hidden;
         z-index: -1;
+
+        display: flex; /* set the display to flex */
+        justify-content: center; /* center horizontally */
+        align-items: center; /* center vertically */
     }
     .button-position {
         position: fixed;
@@ -43,13 +50,14 @@ layout: null
 
     /* Style the video */
     .video-container video {
-        min-width: 90%; 
-        min-height: 90%; 
+        min-width: 40%; 
+        min-height: 50%; 
         position: absolute;
         top: 50%;
         left: 50%;
         bottom: 0;
         transform: translate(-50%,-50%);
+        width:60%!important;
     }
 
     .custom-button {

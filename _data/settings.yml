@@ -36,9 +36,9 @@ menu_settings:
     - title: 'LIBERO'
       url: /libero
       submenu_items:
-      - title: 'Overview'
-        url: /libero
-        icon: ni-bullet-list-67 text-default
+      # - title: 'Overview'
+      #   url: /libero
+      #   icon: ni-bullet-list-67 text-default
       - title: 'Codebase'
         url: https://github.com/Lifelong-Robot-Learning/LIBERO
         icon: ni-spaceship text-success
