@@ -6,7 +6,7 @@ featured_image: /assets/img/libero/libero_five_research_topics.png
 
 ### The study paper
 
-- [LIBERO: Benchmarking Knowledge Transfer in Lifelong Robot Learning](https://arxiv.org/abs/2306.03310). Bo Liu\*, Yifeng Zhu\*, Chongkai Gao\*, Qiang Liu, Yuke Zhu, Peter Stone. Technical Report 2023.
+- [LIBERO: Benchmarking Knowledge Transfer in Lifelong Robot Learning](https://arxiv.org/abs/2306.03310). Bo Liu\*, Yifeng Zhu\*, Chongkai Gao\*, Qiang Liu, Yuke Zhu, Peter Stone. NeurIPS 2023, Dataset and Benchmark Track.
 
 ### Projects that use LIBERO
 
